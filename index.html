@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="test.gif" type="image/x-icon">
+    <title>Dave Is Here!!</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container{
+            text-align: center;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .container > img{
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+        }
+
+        .container2{
+            margin: 25px 0;
+        }
+
+        audio{
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .message > h1{
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            word-wrap: break-word;
+        }
+
+        @media(max-width: 480px){
+            .message h1{
+                font-size: 1.8rem;
+            }
+
+            audio{
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="test.gif" alt="Funny GIF">
+        <div class="container2">
+            <audio controls autoplay loop>
+                <source src="happy.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="message">
+            <h1>HAHAHAHAHAHAHAHAHA</h1>
+        </div>
+    </div>
+
+</body>
+</html>
